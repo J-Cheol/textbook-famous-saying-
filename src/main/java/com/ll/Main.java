@@ -8,7 +8,18 @@ public class Main
 {
     public static void main(String[] args)
     {
+        new App().run();
+    }
+}
+
+class App
+{
+    void run()
+    {
         Scanner Scanner = new Scanner(System.in);
+
+        System.out.println("== 명언 앱 ==");
+        int id = 1;
 
         while (true)
         {
@@ -27,6 +38,8 @@ public class Main
                 Scanner.nextLine();
                 System.out.print("작가 : ");
                 Scanner.nextLine();
+                System.out.println(id + "번 명언이 등록되었습니다.");
+                id++;
             }
         }
         Scanner.close();
